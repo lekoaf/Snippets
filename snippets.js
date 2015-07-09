@@ -4,6 +4,15 @@ var s_ = (function () {
   return {
     // Public variables and functions
 
+    isFullscreen: function () {
+      // Returns a boolean if you are in fullscreen mode.
+      // IE a video element is fullscreen
+      return (document.fullscreenElement ||
+            document.webkitFullscreenElement ||
+            document.mozFullScreenElement ||
+            document.msFullscreenElement) ? true : false;
+    },
+
     removeDuplicates: function (arr){
       // Removes duplicate entries in an array of 
       // numbers and/or strings

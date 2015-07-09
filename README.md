@@ -1,4 +1,4 @@
-# Snippets - v0.1
+# Snippets - v0.2
 Useful snippets of Javascript code
 
 ### Purpose
