@@ -18,6 +18,11 @@ The purpose of this project is to hone my javascript and problem solving skills 
 s_.removeDuplicates([1, 2, 3, 3, 'string', 'string']);
 // Returns: An array without any duplicate entries.
 ```
+```javascript
+// Accepts: No arguments
+s_.isFullscreen();
+// Returns: A boolean value. True if you are in fullscreen and false if not.
+```
 
 ### Versioning
 * Every new function added will be a minor version.
