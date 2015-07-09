@@ -12,17 +12,17 @@ The purpose of this project is to hone my javascript and problem solving skills 
   3. Create a pull request.
 
 ### The functions
-##### removeDuplicates
-```javascript
-// Accepts: An array of strings and/or numbers.
-s_.removeDuplicates([1, 2, 3, 3, 'string', 'string']);
-// Returns: An array without any duplicate entries.
-```
 ##### isFullscreen
 ```javascript
 // Accepts: No arguments
 s_.isFullscreen();
 // Returns: A boolean value. True if you are in fullscreen and false if not.
+```
+##### removeDuplicates
+```javascript
+// Accepts: An array of strings and/or numbers.
+s_.removeDuplicates([1, 2, 3, 3, 'string', 'string']);
+// Returns: An array without any duplicate entries.
 ```
 
 ### Versioning
