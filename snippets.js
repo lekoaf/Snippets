@@ -4,9 +4,27 @@ var s_ = (function () {
   return {
     // Public variables and functions
 
+    forEachThen: function (arr, forEachCallback, thenCallback) {
+      if (Array.isArray(arr) === false) {
+        throw new Error('Feed me an array!');
+      } else if (typeof forEachCallback !== 'function' || 
+        typeof thenCallback !== 'function') {
+        throw new Error('You need two callback functions.');
+      }
+      var i = -1;
+      function next() {
+        i++;
+        if (i < arr.length) {
+          return forEachCallback(arr[i], next, i);
+        }
+        return thenCallback();
+      }
+      next();
+    },
+
     isFullscreen: function () {
       // Returns a boolean if you are in fullscreen mode.
-      // IE a video element is fullscreen
+      // IE if a video element is fullscreen
       return (document.fullscreenElement ||
             document.webkitFullscreenElement ||
             document.mozFullScreenElement ||

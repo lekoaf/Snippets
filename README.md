@@ -1,4 +1,4 @@
-# Snippets - v0.2
+# Snippets - v0.3
 Useful snippets of Javascript code
 
 ### Purpose
@@ -12,6 +12,22 @@ The purpose of this project is to hone my javascript and problem solving skills 
   3. Create a pull request.
 
 ### The functions
+##### forEachThen
+```javascript
+// Accepts: An array, a callback function for each iteration
+// and a function to do after the iteration is done.
+// Remember to do the next() call with the iteration function.
+// This function is good for when you have asynchronus things
+// and want to control when they are done.
+var arr = [1,2,3,4,5];
+forEachThen(arr, function (a, next){
+  // Do you iterations here
+  next();
+}, function () {
+  // Do something here when all is done
+});
+// Returns: Nothing
+```
 ##### isFullscreen
 ```javascript
 // Accepts: No arguments
