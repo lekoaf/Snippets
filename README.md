@@ -1,6 +1,11 @@
 # Snippets - v0.3
 Useful snippets of Javascript code
 
+### Shortcuts
+* [forEachThen](#forEachThen)
+* [isFullscreen](#isFullscreen)
+* [removeDuplicates](#removeDuplicates)
+
 ### Purpose
 The purpose of this project is to hone my javascript and problem solving skills while also giving everyone who wants it a library with useful functions that solves common day to day problems.
 
@@ -12,7 +17,7 @@ The purpose of this project is to hone my javascript and problem solving skills 
   3. Create a pull request.
 
 ### The functions
-##### forEachThen
+##### <a name="forEachThen"></a>forEachThen
 ```javascript
 // Accepts: An array, a callback function for each iteration
 // and a function to do after the iteration is done.
@@ -28,13 +33,13 @@ forEachThen(arr, function (a, next){
 });
 // Returns: Nothing
 ```
-##### isFullscreen
+##### <a name="isFullscreen"></a>isFullscreen
 ```javascript
 // Accepts: No arguments
 s_.isFullscreen();
 // Returns: A boolean value. True if you are in fullscreen and false if not.
 ```
-##### removeDuplicates
+##### <a name="removeDuplicates"></a>removeDuplicates
 ```javascript
 // Accepts: An array of strings and/or numbers.
 s_.removeDuplicates([1, 2, 3, 3, 'string', 'string']);
