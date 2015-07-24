@@ -5,7 +5,7 @@ var s_ = (function () {
     // Public variables and functions
 
     forEachThen: function (arr, forEachCallback, thenCallback) {
-      if (Array.isArray(arr) === false) {
+      if (!(arr instanceof Array)) {
         throw new Error('Feed me an array!');
       } else if (typeof forEachCallback !== 'function' || 
         typeof thenCallback !== 'function') {
@@ -30,6 +30,14 @@ var s_ = (function () {
             document.mozFullScreenElement ||
             document.msFullscreenElement) ? true : false;
     },
+    
+    kmToMiles: function (km) {
+      return parseFloat(km) * 0.621371192;
+    },
+    
+    milesToKm: function (mi) {
+      return parseFloat(mi) * 1.609344;
+    },
 
     removeDuplicates: function (arr){
       // Removes duplicate entries in an array of 
@@ -51,6 +59,6 @@ var s_ = (function () {
         arr.push(arrayMap[p]);
       }
       return arr;
-    }
+    },
   }
 })();

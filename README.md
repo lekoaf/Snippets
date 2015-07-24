@@ -1,9 +1,11 @@
-# Snippets - v0.3
+# Snippets - v0.5
 Useful snippets of Javascript code
 
 ### Shortcuts
 * [forEachThen](#forEachThen)
 * [isFullscreen](#isFullscreen)
+* [kmToMiles](#kmToMiles)
+* [milesToKm](#milesToKm)
 * [removeDuplicates](#removeDuplicates)
 
 ### Purpose
@@ -39,10 +41,25 @@ forEachThen(arr, function (a, next){
 s_.isFullscreen();
 // Returns: A boolean value. True if you are in fullscreen and false if not.
 ```
+##### <a name="kmToMiles"></a>kmToMiles
+```javascript
+// Accepts: A number
+s_.kmToMiles(10);
+// 6.21371192
+// Returns: The number converted to miles.
+```
+##### <a name="milesToKm"></a>milesToKm
+```javascript
+// Accepts: A number
+s_.milesToKm(10);
+// 16.09344
+// Returns: The number converted to kilometers.
+```
 ##### <a name="removeDuplicates"></a>removeDuplicates
 ```javascript
 // Accepts: An array of strings and/or numbers.
-s_.removeDuplicates([1, 2, 3, 3, 'string', 'string']);
+s_.removeDuplicates([1, 2, 3, 3, 'string', 'string']); 
+// [1, 2, 3, 'string']
 // Returns: An array without any duplicate entries.
 ```
 
